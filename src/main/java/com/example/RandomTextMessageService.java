@@ -1,6 +1,6 @@
 package com.example;
 
-import org.springframework.stereotype.Component;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 
 //Otrzymujesz ten błąd, ponieważ po stworzeniu instancji kontener próbuje przypisać ten sam obiekt do obu klas
 
-@Component("messageRandomService")
+
 public class RandomTextMessageService implements MessageService{
 
     private String[] tablica={ "wiad1", "wiad2", "wiad3", "wiad4", "wiad5", "wiad6", "wiad7", "wiad8", "wiad9", "wiad10"};

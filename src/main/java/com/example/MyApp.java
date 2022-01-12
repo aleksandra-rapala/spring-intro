@@ -1,11 +1,14 @@
 package com.example;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyApp {
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ConfigureBean.class);
 
 
 
@@ -24,6 +27,5 @@ public class MyApp {
         System.out.println("hashcode 3 zmienna:" + messageService3.hashCode());
 
 
-        applicationContext.close();
     }
 }
