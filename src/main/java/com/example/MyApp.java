@@ -8,7 +8,6 @@ public class MyApp {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 
 
-
         MessageService messageService = applicationContext.getBean("messageService", MessageService.class);
         System.out.println(messageService.getMessage());
 
